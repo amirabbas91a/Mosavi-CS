@@ -1,0 +1,22 @@
+{
+  "appId": "ir.mosavi.cs",
+  "appName": "MOSAVI CS",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1500,
+      "backgroundColor": "#090a0f",
+      "androidScaleType": "CENTER_CROP",
+      "showSpinner": false
+    }
+  },
+  "android": {
+    "allowMixedContent": false,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": false
+  }
+}

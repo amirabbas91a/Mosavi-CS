@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: mosavi-cs-server
+    runtime: node
+    plan: free
+    region: frankfurt
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: CORS_ORIGIN
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: mosavi-cs-db
+          property: connectionString
+
+databases:
+  - name: mosavi-cs-db
+    databaseName: mosavics
+    user: mosavi_admin
+    plan: free
+    region: frankfurt

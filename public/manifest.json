@@ -1,0 +1,20 @@
+{
+  "id": "/",
+  "name": "MOSAVI CS — Tactical 3D Competitive FPS",
+  "short_name": "MOSAVI CS",
+  "description": "Tactical 3D First-Person Shooter with intelligent bot AI, WebSocket multiplayer, and 3D maps.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#090a0f",
+  "theme_color": "#dc2626",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
